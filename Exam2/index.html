@@ -1,18 +1,143 @@
 <html>
 
 <head>
-    <title>[]Ernesto Mata Exam 2 MIS3033</title>
+    <title>[HIZZ]Ernesto Mata Exam 2 MIS3033</title>
+    <style>
+        #main 
+        {
+            width: 800px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        #head
+        {
+            display:flex;
+            flex-direction:row;
+        }
+        #b1
+        {
+            height:80px;
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+        }
+        #b2
+        {
+            display:flex;
+            flex-direction:row;
+        }
+        #downimg
+        {
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+            justify-content:center;
+        }
+        #foot
+        {
+            height:60px;
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+            justify-content:center;
+        }
+        .bstyle
+        {
+            border-style:solid;
+            border-width:1px;
+            border-color:lightgrey;
+            border-radius:5px;
+        }
+        .tstyle
+        {
+            text-transform:uppercase;
+            background-color:lightskyblue;
+            border-radius:5px;
+        }
+    </style>
 </head>
 
 <body>
-    <img src="static/head1.png" style="height:100px;" />
-    <img src="static/head2.png" style="height:100px;" />
-    <img src="static/linkedin.png" style="height:100px;" />
-    <img src="static/html.svg" style="height:100px;" />
-    <img src="static/css.svg" style="height:100px;" />
-    <img src="static/javascript.svg" style="height:100px;" />
-    <img src="static/sqlite.svg" style="height:100px;" />
-    <img src="static/logo.svg" style="height:100px;" />
+
+    <div id="main">
+        <div id="head">
+            <div class="bstyle" style="width:200px;height:70px;margin-right:10px;">
+                <br />
+                MIS 3033 Exam 2 <br />
+                Ernesto Mata
+            </div>
+            <div class="bstyle" style="width:200px;height:70px;">
+                <br />
+                [HIZZ]
+            </div>
+
+        </div>
+
+        <div id="b1" class="bstyle">
+            <div>
+                <img src="static/head1.png" style="height:60px; border-radius:50%;"/>
+            </div>
+
+            <div>
+                Ernesto Mata <br />
+                MIS Student
+            </div>
+
+            <div style="margin-left:10px;">
+                <a href="https://www.linkedin.com/"><img src="static/linkedin.png" style="width:30px;" /></a>
+            </div>
+
+        </div>
+
+        <div id="b2">
+            <div id="right">
+                <div id="up" style="width:510px;height:110px;" class="bstyle">
+                    <span class="tstyle">about me:</span>
+                    <p>I am a MIS student. I like programming and I am good at C#. I learned Entity
+                    Framework to Database Manipulations. I know HTML, CSS and I started to
+                    learn JavaScript. It is fun. Later I will learn C# .NET MVC dynamic web app
+                    development and Web API development.</p>
+                </div>
+
+                <div id="down" style="width:510px;height:160px;" class="bstyle">
+                    <span class="tstyle">achievements</span>
+                    <div id="downimg">
+                        <div class="bstyle">
+                            <img src="static/html.svg" style="height:100px;"/> <br />
+                            HTML
+                        </div>
+
+                        <div class="bstyle">
+                            <img src="static/css.svg" style="height:100px;"/> <br />
+                            CSS
+                        </div>
+
+                        <div class="bstyle">
+                            <img src="static/javascript.svg" style="height:100px;"/> <br />
+                            JavaScript
+                        </div>          
+                    </div>
+                </div>
+            </div>
+
+            <div id="left" class="bstyle" style="width:280px;">
+                <span class="tstyle">recent news:</span>
+                <ul>
+                    <li>Learned C#</li>
+                    <li>Learned Entity Framework</li>
+                    <li>Learned <img src="static/sqlite.svg" style="height:40px;" /></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="foot" class="bstyle">
+            <span style="font-weight:bold;font-size:20px;color:grey;">Developed by Ernesto Mata for MIS 3033 Exam 2</span>
+            <div>
+                <img src="static/logo.svg" style="height:50px;" />
+            </div>
+        </div>
+
+    </div>
 </body>
 
 </html>
